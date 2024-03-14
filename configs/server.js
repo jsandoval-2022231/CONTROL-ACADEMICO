@@ -5,8 +5,10 @@ import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import { dbConnection } from './mongo.js';
-//import userRoutes from '../src/user/user.routes.js';
-//import authRoutes from '../src/auth/auth.routes.js';
+import userRoutes from '../src/user/user.routes.js';
+import authRoutes from '../src/auth/auth.routes.js';
+import courseRoutes from '../src/course/course.routes.js';
+import studentRoutes from '../src/student/student.routes.js';
 
 class Server {
     constructor() {
@@ -14,6 +16,8 @@ class Server {
         this.port = process.env.PORT;
         this.userPath = '/control/v1/users';
         this.authPath = '/control/v1/auth';
+        this.coursePath = '/control/v1/courses';
+        this.studentPath = '/control/v1/students';
 
         this.middlewares();
         this.connectDB();
@@ -32,8 +36,10 @@ class Server {
     }
 
     routes(){
-        //this.app.use(this.userPath, userRoutes);
-        //this.app.use(this.authPath, authRoutes);
+        this.app.use(this.userPath, userRoutes);
+        this.app.use(this.authPath, authRoutes);
+        this.app.use(this.coursePath, courseRoutes);
+        this.app.use(this.studentPath, studentRoutes);
     }
 
     listen(){
