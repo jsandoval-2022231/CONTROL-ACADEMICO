@@ -1,0 +1,80 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "STUDENT_AC",
+    "dateExported": "2024-03-14T12:32:17.164Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "596de907-886d-48e4-bce9-99457a80bc26",
+            "colId": "118f5059-8f2d-45cd-8652-ef0c5fc00193",
+            "containerId": "",
+            "name": "UpdateMyAccount",
+            "url": "http://localhost:8080/control/v1/users/own",
+            "method": "PUT",
+            "sortNum": 10000,
+            "created": "2024-03-14T10:24:54.378Z",
+            "modified": "2024-03-14T10:26:17.768Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "022148cd-58ed-49da-89b2-ae21c6223006",
+            "colId": "118f5059-8f2d-45cd-8652-ef0c5fc00193",
+            "containerId": "",
+            "name": "DeleteMyAccount",
+            "url": "http://localhost:8080/control/v1/users/own",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2024-03-14T10:26:28.166Z",
+            "modified": "2024-03-14T10:26:32.859Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bb2a369b-1149-4320-859e-a4ac07499c91",
+            "colId": "118f5059-8f2d-45cd-8652-ef0c5fc00193",
+            "containerId": "",
+            "name": "AddCourse",
+            "url": "http://localhost:8080/control/v1/students/add-course",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-14T11:43:23.218Z",
+            "modified": "2024-03-14T12:16:43.068Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYyZDcwNzNlNDk3YTkwY2RhMmYyNGEiLCJpYXQiOjE3MTA0MTg0ODYsImV4cCI6MTcxMDQyMjA4Nn0.u54ty9-xGDqsft2sShUHEaJ8MKqQFEJS8QGyDZD7Nvo"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"courses\": [\"65f2d76db42c4ba7f0ad8d1c\"]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1e42f87f-7805-43a4-831c-a4c184251d3f",
+            "colId": "118f5059-8f2d-45cd-8652-ef0c5fc00193",
+            "containerId": "",
+            "name": "GetCoursesStudent",
+            "url": "http://localhost:8080/control/v1/students/my-courses",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-03-14T12:07:59.585Z",
+            "modified": "2024-03-14T12:30:02.269Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYyZDcwNzNlNDk3YTkwY2RhMmYyNGEiLCJpYXQiOjE3MTA0MTkzOTEsImV4cCI6MTcxMDQyMjk5MX0.S1KfgvAY7Q65mc8Ru9kAeffG0TUEESpbh42ZNcn_BvU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

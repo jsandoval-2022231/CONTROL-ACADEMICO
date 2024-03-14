@@ -1,0 +1,91 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "COURSES_AC",
+    "dateExported": "2024-03-14T12:32:32.091Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "12c81800-9e74-4750-89be-f0afea882f7a",
+            "colId": "2c8a9289-02a3-4646-abf9-d3b56631b97a",
+            "containerId": "",
+            "name": "PostCourse",
+            "url": "http://localhost:8080/control/v1/courses",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-14T10:07:02.485Z",
+            "modified": "2024-03-14T10:55:06.432Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYyZDZmODNlNDk3YTkwY2RhMmYyNDUiLCJpYXQiOjE3MTA0MTM2NTUsImV4cCI6MTcxMDQxNzI1NX0.vYMzpXr87ANjr2n0kY73MWqOP3WWejtEAJ7YNq2lC_4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"MATH FROM ADMIN\",\n  \"description\": \"This is a description for MATH\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "91370169-a389-4548-b1a4-4987bb13a92a",
+            "colId": "2c8a9289-02a3-4646-abf9-d3b56631b97a",
+            "containerId": "",
+            "name": "GetCourses",
+            "url": "http://localhost:8080/control/v1/courses",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-14T10:17:07.111Z",
+            "modified": "2024-03-14T10:56:14.543Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "50c3a7db-a089-423d-8eb7-9588977890cd",
+            "colId": "2c8a9289-02a3-4646-abf9-d3b56631b97a",
+            "containerId": "",
+            "name": "UpdateCourse",
+            "url": "http://localhost:8080/control/v1/courses/65f2d76db42c4ba7f0ad8d1c",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-14T10:55:51.983Z",
+            "modified": "2024-03-14T12:17:16.639Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYyZDZmODNlNDk3YTkwY2RhMmYyNDUiLCJpYXQiOjE3MTA0MTg2MjIsImV4cCI6MTcxMDQyMjIyMn0.UYHrVHleqamw7BU8kzPgRamgu48VpZCTJYNp5qamN3M"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Course Changed third time\",\n  \"description\": \"Description Changed\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3410d7d4-bd31-4003-8fb8-0e88be15446c",
+            "colId": "2c8a9289-02a3-4646-abf9-d3b56631b97a",
+            "containerId": "",
+            "name": "DeleteCourse",
+            "url": "http://localhost:8080/control/v1/courses/65f2d76db42c4ba7f0ad8d1c",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-03-14T11:21:16.030Z",
+            "modified": "2024-03-14T11:22:30.957Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYyZDZmODNlNDk3YTkwY2RhMmYyNDUiLCJpYXQiOjE3MTA0MTM4MDcsImV4cCI6MTcxMDQxNzQwN30.tfw2SdsIhAVfzUquvF4yDPRGSFNxmM4ldYl1_LDZNtA"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

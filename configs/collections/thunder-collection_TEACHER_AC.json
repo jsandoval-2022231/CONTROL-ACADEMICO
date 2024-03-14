@@ -1,0 +1,47 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "TEACHER_AC",
+    "dateExported": "2024-03-14T12:31:45.154Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "34f96a0d-68d0-416b-965d-e6ff036edde6",
+            "colId": "bb3ab0ec-9a87-4b12-92af-7f8ac70ddcaf",
+            "containerId": "",
+            "name": "GetMyCourses",
+            "url": "http://localhost:8080/control/v1/courses/my-courses",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-14T11:06:52.750Z",
+            "modified": "2024-03-14T12:23:00.327Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYyZDZmODNlNDk3YTkwY2RhMmYyNDUiLCJpYXQiOjE3MTA0MTg5NjIsImV4cCI6MTcxMDQyMjU2Mn0.6Nio9VdQNb7wbQQ9PbVaHWz1UZByjEb3pCsrb9esrQM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "db3b39c3-8d55-4c65-a7fe-2043daa07fab",
+            "colId": "bb3ab0ec-9a87-4b12-92af-7f8ac70ddcaf",
+            "containerId": "",
+            "name": "DeleteCourseFromS",
+            "url": "http://localhost:8080/control/v1/courses/delete/65f2d76db42c4ba7f0ad8d1c",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-03-14T12:22:19.817Z",
+            "modified": "2024-03-14T12:23:25.157Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYyZDZmODNlNDk3YTkwY2RhMmYyNDUiLCJpYXQiOjE3MTA0MTg5NjIsImV4cCI6MTcxMDQyMjU2Mn0.6Nio9VdQNb7wbQQ9PbVaHWz1UZByjEb3pCsrb9esrQM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
